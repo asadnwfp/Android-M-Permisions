@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.04"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_phoneNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.11"
+            android:text="Enter Phone No"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/et_phoneNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.11"
+            android:ems="10"
+            android:inputType="phone" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.11"
+        android:hint="Enter Your Message" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="Send"
+        android:text="Send"
+        android:textColor="#48c1e3"
+        android:textColorHighlight="#cc6d6d" />
+</LinearLayout>
